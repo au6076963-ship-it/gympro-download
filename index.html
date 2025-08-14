@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahmed Usman Gym Management Software</title>
+
+<style>
+
+    /* Google Font */
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    * {
+
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    body {
+
+        background-color: #f5f6fa;
+
+        color: #333;
+
+    }
+
+    /* Hero Section */
+
+    .hero {
+
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+
+        color: white;
+
+        padding: 80px 20px;
+
+        text-align: center;
+
+        animation: fadeIn 1.5s ease-in-out;
+
+    }
+
+    .hero h1 {
+
+        font-size: 3em;
+
+        font-weight: 700;
+
+    }
+
+    .hero p {
+
+        font-size: 1.2em;
+
+        margin: 15px auto;
+
+        max-width: 700px;
+
+        opacity: 0.9;
+
+    }
+
+    .btn-download {
+
+        display: inline-block;
+
+        background: #ff4b2b;
+
+        color: white;
+
+        padding: 15px 40px;
+
+        margin-top: 20px;
+
+        font-size: 1.2em;
+
+        border-radius: 50px;
+
+        text-decoration: none;
+
+        box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
+
+        transition: all 0.3s ease;
+
+    }
+
+    .btn-download:hover {
+
+        background: #ff3a1a;
+
+        transform: translateY(-3px);
+
+        box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
+
+    }
+
+    /* Features Section */
+
+    .features {
+
+        padding: 60px 20px;
+
+        text-align: center;
+
+        background-color: white;
+
+    }
+
+    .features h2 {
+
+        font-size: 2.5em;
+
+        margin-bottom: 30px;
+
+    }
+
+    .feature-grid {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        gap: 30px;
+
+        margin-top: 20px;
+
+    }
+
+    .feature-item {
+
+        background: #f1f2f6;
+
+        padding: 20px;
+
+        border-radius: 15px;
+
+        transition: transform 0.3s ease;
+
+    }
+
+    .feature-item:hover {
+
+        transform: translateY(-5px);
+
+    }
+
+    .feature-icon {
+
+        font-size: 40px;
+
+        margin-bottom: 15px;
+
+        color: #2a5298;
+
+    }
+
+    /* Screenshots */
+
+    .screenshots {
+
+        padding: 60px 20px;
+
+        text-align: center;
+
+        background-color: #eef1f6;
+
+    }
+
+    .screenshots h2 {
+
+        font-size: 2.5em;
+
+        margin-bottom: 30px;
+
+    }
+
+    .screenshot-gallery {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 20px;
+
+    }
+
+    .screenshot-gallery img {
+
+        width: 300px;
+
+        border-radius: 15px;
+
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+        transition: transform 0.3s ease;
+
+    }
+
+    .screenshot-gallery img:hover {
+
+        transform: scale(1.05);
+
+    }
+
+    /* Contact Section */
+
+    .contact {
+
+        padding: 60px 20px;
+
+        text-align: center;
+
+        background: white;
+
+    }
+
+    .btn-whatsapp {
+
+        display: inline-block;
+
+        background: #25d366;
+
+        color: white;
+
+        padding: 15px 30px;
+
+        border-radius: 50px;
+
+        font-size: 1.2em;
+
+        text-decoration: none;
+
+        transition: background 0.3s ease;
+
+    }
+
+    .btn-whatsapp:hover {
+
+        background: #1ebe57;
+
+    }
+
+    /* Footer */
+
+    footer {
+
+        background: #1e3c72;
+
+        color: white;
+
+        text-align: center;
+
+        padding: 15px;
+
+        font-size: 0.9em;
+
+    }
+
+    /* Animations */
+
+    @keyframes fadeIn {
+
+        from { opacity: 0; transform: translateY(-20px); }
+
+        to { opacity: 1; transform: translateY(0); }
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+    <h1>Ahmed Usman Gym Management Software</h1>
+
+    <p>The ultimate solution to manage memberships, payments, attendance, and more — all in one easy-to-use application.</p>
+
+    <a href="https://release-assets.githubusercontent.com/github-production-release-asset/1037960459/84d63bb6-c8f7-4719-93f6-954b2109931d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-14T12%3A45%3A43Z&rscd=attachment%3B+filename%3DGymPro_Setup_v1.2.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-14T11%3A45%3A21Z&ske=2025-08-14T12%3A45%3A43Z&sks=b&skv=2018-11-09&sig=9EFhM8Aq4cuVWmkjoSe3BKjld7GN4u0nFe%2BKhmzTNmg%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NTE3MzM5NywibmJmIjoxNzU1MTczMDk3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.eC1LgK8bLCnj6FMLYvuaHj5fKbluLszI5uExIPQUAa8&response-content-disposition=attachment%3B%20filename%3DGymPro_Setup_v1.2.exe&response-content-type=application%2Foctet-stream" class="btn-download">⬇ Download Now</a>
+
+</section>
+
+<!-- Features Section -->
+
+<section class="features">
+
+    <h2>Why Choose Our Software?</h2>
+
+    <div class="feature-grid">
+
+        <div class="feature-item">
+
+            <div class="feature-icon">💳</div>
+
+            <h3>Membership Management</h3>
+
+            <p>Track members, renewals, and subscriptions with ease.</p>
+
+        </div>
+
+        <div class="feature-item">
+
+            <div class="feature-icon">📅</div>
+
+            <h3>Attendance Tracking</h3>
+
+            <p>Monitor member check-ins and class schedules.</p>
+
+        </div>
+
+        <div class="feature-item">
+
+            <div class="feature-icon">💰</div>
+
+            <h3>Payment Records</h3>
+
+            <p>Manage fees, payments, and outstanding balances.</p>
+
+        </div>
+
+        <div class="feature-item">
+
+            <div class="feature-icon">📊</div>
+
+            <h3>Reports & Analytics</h3>
+
+            <p>Generate insightful reports to grow your business.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Screenshots Section -->
+
+<section class="screenshots">
+
+    <h2>See the Software in Action</h2>
+
+    <div class="screenshot-gallery">
+
+        <img src="YOUR_SCREENSHOT1_URL" alt="Screenshot 1">
+
+        <img src="YOUR_SCREENSHOT2_URL" alt="Screenshot 2">
+
+        <img src="YOUR_SCREENSHOT3_URL" alt="Screenshot 3">
+
+    </div>
+
+</section>
+
+<!-- Contact Section -->
+
+<section class="contact">
+
+    <h2>Get Your Lifetime License Key</h2>
+
+    <p>Contact us directly on WhatsApp to get your license and start using the software today.</p>
+
+    <a href="https://wa.me/923235707591" target="_blank" class="btn-whatsapp">💬 WhatsApp: 03235707591</a>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    © 2025 Ahmed Usman | All Rights Reserved
+
+</footer>
+
+</body>
+
+</html>
