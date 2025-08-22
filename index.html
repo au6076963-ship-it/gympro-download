@@ -1,406 +1,265 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Ahmed Usman Gym Management Software</title>
 
 <style>
-
     /* Google Font */
-
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
     * {
-
         margin: 0;
-
         padding: 0;
-
         box-sizing: border-box;
-
         font-family: 'Poppins', sans-serif;
-
     }
 
     body {
-
-        background-color: #f5f6fa;
-
+        background: #f5f6fa;
         color: #333;
-
+        line-height: 1.6;
     }
 
     /* Hero Section */
-
     .hero {
-
         background: linear-gradient(135deg, #1e3c72, #2a5298);
-
         color: white;
-
-        padding: 80px 20px;
-
+        padding: 100px 20px;
         text-align: center;
-
         animation: fadeIn 1.5s ease-in-out;
-
     }
-
     .hero h1 {
-
-        font-size: 3em;
-
+        font-size: 3.5em;
         font-weight: 700;
-
+        margin-bottom: 20px;
     }
-
     .hero p {
-
-        font-size: 1.2em;
-
-        margin: 15px auto;
-
-        max-width: 700px;
-
+        font-size: 1.3em;
+        max-width: 750px;
+        margin: 0 auto 30px auto;
         opacity: 0.9;
-
     }
-
     .btn-download {
-
         display: inline-block;
-
-        background: #ff4b2b;
-
+        background: linear-gradient(135deg, #ff4b2b, #ff416c);
         color: white;
-
-        padding: 15px 40px;
-
+        padding: 15px 45px;
         margin-top: 20px;
-
         font-size: 1.2em;
-
         border-radius: 50px;
-
         text-decoration: none;
-
-        box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
-
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
         transition: all 0.3s ease;
-
+    }
+    .btn-download:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
-    .btn-download:hover {
-
-        background: #ff3a1a;
-
-        transform: translateY(-3px);
-
-        box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
-
+    /* Requirements */
+    .requirements {
+        padding: 60px 20px;
+        background: #ffffff;
+        text-align: center;
+    }
+    .requirements h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #1e3c72;
+    }
+    .login-info {
+        background: #f1f2f6;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 12px;
+        max-width: 500px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     /* Features Section */
-
     .features {
-
-        padding: 60px 20px;
-
+        padding: 80px 20px;
         text-align: center;
-
-        background-color: white;
-
+        background: linear-gradient(135deg, #eef2f3, #dfe9f3);
     }
-
     .features h2 {
-
-        font-size: 2.5em;
-
-        margin-bottom: 30px;
-
-    }
-
-    .feature-grid {
-
-        display: grid;
-
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-        gap: 30px;
-
-        margin-top: 20px;
-
-    }
-
-    .feature-item {
-
-        background: #f1f2f6;
-
-        padding: 20px;
-
-        border-radius: 15px;
-
-        transition: transform 0.3s ease;
-
-    }
-
-    .feature-item:hover {
-
-        transform: translateY(-5px);
-
-    }
-
-    .feature-icon {
-
-        font-size: 40px;
-
-        margin-bottom: 15px;
-
+        font-size: 2.8em;
+        margin-bottom: 40px;
         color: #2a5298;
-
+    }
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+    .feature-item {
+        background: rgba(255,255,255,0.8);
+        padding: 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+    .feature-icon {
+        font-size: 50px;
+        margin-bottom: 20px;
+        color: #ff4b2b;
+    }
+    .feature-item h3 {
+        color: #1e3c72;
+        margin-bottom: 10px;
     }
 
     /* Screenshots */
-
     .screenshots {
-
-        padding: 60px 20px;
-
+        padding: 80px 20px;
         text-align: center;
-
-        background-color: #eef1f6;
-
+        background-color: #f9f9fb;
     }
-
     .screenshots h2 {
-
-        font-size: 2.5em;
-
+        font-size: 2.8em;
         margin-bottom: 30px;
-
+        color: #2a5298;
     }
-
     .screenshot-gallery {
-
         display: flex;
-
         flex-wrap: wrap;
-
         justify-content: center;
-
         gap: 20px;
-
     }
-
     .screenshot-gallery img {
-
         width: 300px;
-
         border-radius: 15px;
-
-        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         transition: transform 0.3s ease;
-
     }
-
     .screenshot-gallery img:hover {
-
-        transform: scale(1.05);
-
+        transform: scale(1.08);
     }
 
     /* Contact Section */
-
     .contact {
-
-        padding: 60px 20px;
-
+        padding: 80px 20px;
         text-align: center;
-
-        background: white;
-
-    }
-
-    .btn-whatsapp {
-
-        display: inline-block;
-
-        background: #25d366;
-
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
         color: white;
-
-        padding: 15px 30px;
-
-        border-radius: 50px;
-
-        font-size: 1.2em;
-
-        text-decoration: none;
-
-        transition: background 0.3s ease;
-
     }
-
+    .contact h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    .btn-whatsapp {
+        display: inline-block;
+        background: #25d366;
+        color: white;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-size: 1.3em;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
     .btn-whatsapp:hover {
-
         background: #1ebe57;
-
     }
 
     /* Footer */
-
     footer {
-
-        background: #1e3c72;
-
-        color: white;
-
+        background: #111;
+        color: #aaa;
         text-align: center;
-
-        padding: 15px;
-
+        padding: 20px;
         font-size: 0.9em;
-
+    }
+    footer strong {
+        color: white;
     }
 
     /* Animations */
-
     @keyframes fadeIn {
-
         from { opacity: 0; transform: translateY(-20px); }
-
         to { opacity: 1; transform: translateY(0); }
-
     }
-
 </style>
-
 </head>
 
 <body>
-    
-    <!-- Hero Section -->
+
+<!-- Hero Section -->
 <section class="hero">
     <h1>Ahmed Usman Gym Management Software</h1>
     <p>Manage memberships, payments, attendance, and more — all in one powerful, user-friendly system designed for gyms of every size.</p>
-    <a href="="https://release-assets.githubusercontent.com/github-production-release-asset/1037759474/0aa5101a-9797-482d-a42c-5ace2d69b57f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-22T10%3A06%3A14Z&rscd=attachment%3B+filename%3DGymPro_Setup_v1.2.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-22T09%3A06%3A05Z&ske=2025-08-22T10%3A06%3A14Z&sks=b&skv=2018-11-09&sig=7T4fyJauIZsoCWKiOD4dj3eYZ9jse7dHAiuapHMFPCw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NTg1NDg3NywibmJmIjoxNzU1ODU0NTc3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Fhe4rir_QxRGBiLEywvKpESQxtQL9sM7R57lKVJfqig&response-content-disposition=attachment%3B%20filename%3DGymPro_Setup_v1.2.exe&response-content-type=application%2Foctet-stream" class="btn-download">⬇ Download Software</a>
+    <a href="https://release-assets.githubusercontent.com/github-production-release-asset/1037759474/0aa5101a-9797-482d-a42c-5ace2d69b57f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-22T10%3A06%3A14Z&rscd=attachment%3B+filename%3DGymPro_Setup_v1.2.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-22T09%3A06%3A05Z&ske=2025-08-22T10%3A06%3A14Z&sks=b&skv=2018-11-09&sig=7T4fyJauIZsoCWKiOD4dj3eYZ9jse7dHAiuapHMFPCw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NTg1NDg3NywibmJmIjoxNzU1ODU0NTc3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Fhe4rir_QxRGBiLEywvKpESQxtQL9sM7R57lKVJfqig&response-content-disposition=attachment%3B%20filename%3DGymPro_Setup_v1.2.exe&response-content-type=application%2Foctet-stream" class="btn-download">⬇ Download Software</a>
 </section>
 
 <!-- Requirements Section -->
 <section class="requirements">
     <h2>Before You Start</h2>
-    <p>To run this application, you must install the latest <strong>.NET Desktop Runtime</strong> from Microsoft:</p>
-    <p>
-        🔗 <a href="https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime" target="_blank">
-            Download .NET Desktop Runtime (Latest Version)
-        </a>
-    </p>
+    <p>Install the latest <strong>.NET Desktop Runtime</strong> from Microsoft:</p>
+    <p>🔗 <a href="https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime" target="_blank">Download .NET Desktop Runtime (Latest)</a></p>
     <div class="login-info">
         <h3>Default Login Details</h3>
         <p><strong>Username:</strong> admin</p>
         <p><strong>Password:</strong> admin@123</p>
     </div>
-    <br>
     <a href="https://release-assets.githubusercontent.com/github-production-release-asset/1037759474/0aa5101a-9797-482d-a42c-5ace2d69b57f?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-22T10%3A06%3A14Z&rscd=attachment%3B+filename%3DGymPro_Setup_v1.2.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-22T09%3A06%3A05Z&ske=2025-08-22T10%3A06%3A14Z&sks=b&skv=2018-11-09&sig=7T4fyJauIZsoCWKiOD4dj3eYZ9jse7dHAiuapHMFPCw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NTg1NDg3NywibmJmIjoxNzU1ODU0NTc3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Fhe4rir_QxRGBiLEywvKpESQxtQL9sM7R57lKVJfqig&response-content-disposition=attachment%3B%20filename%3DGymPro_Setup_v1.2.exe&response-content-type=application%2Foctet-stream" class="btn-download">⬇ Download Software</a>
 </section>
 
 <!-- Features Section -->
-
 <section class="features">
-
     <h2>Why Choose Our Software?</h2>
-
     <div class="feature-grid">
-
         <div class="feature-item">
-
             <div class="feature-icon">💳</div>
-
             <h3>Membership Management</h3>
-
             <p>Track members, renewals, and subscriptions with ease.</p>
-
         </div>
-
         <div class="feature-item">
-
             <div class="feature-icon">📅</div>
-
             <h3>Attendance Tracking</h3>
-
             <p>Monitor member check-ins and class schedules.</p>
-
         </div>
-
         <div class="feature-item">
-
             <div class="feature-icon">💰</div>
-
             <h3>Payment Records</h3>
-
             <p>Manage fees, payments, and outstanding balances.</p>
-
         </div>
-
         <div class="feature-item">
-
             <div class="feature-icon">📊</div>
-
             <h3>Reports & Analytics</h3>
-
             <p>Generate insightful reports to grow your business.</p>
-
         </div>
-
     </div>
-
 </section>
 
 <!-- Screenshots Section -->
-
 <section class="screenshots">
-
     <h2>See the Software in Action</h2>
-
     <div class="screenshot-gallery">
-
         <img src="YOUR_SCREENSHOT1_URL" alt="Screenshot 1">
-
         <img src="YOUR_SCREENSHOT2_URL" alt="Screenshot 2">
-
         <img src="YOUR_SCREENSHOT3_URL" alt="Screenshot 3">
-
     </div>
-
 </section>
 
 <!-- Contact Section -->
-
 <section class="contact">
-
     <h2>Get Your Lifetime License Key</h2>
-
     <p>Contact us directly on WhatsApp to get your license and start using the software today.</p>
-
     <a href="https://wa.me/923235707591" target="_blank" class="btn-whatsapp">💬 WhatsApp: 03235707591</a>
-
 </section>
 
 <!-- Footer -->
-
 <footer>
-
-    © 2025 Ahmed Usman | All Rights Reserved
-
+    © <strong>2025 Ahmed Usman</strong> | All Rights Reserved
 </footer>
 
 </body>
-
 </html>
